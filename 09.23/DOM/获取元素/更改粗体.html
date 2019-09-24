@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="mydiv">焦迈奇</h1>
+    <script>
+         var mydiv=document.getElementById('mydiv');
+         console.log(mydiv.tagName)
+         //方法一:
+         if(mydiv.tagName=='H1'||mydiv.tagName=='H2'||mydiv.tagName=='H3'||mydiv.tagName=='H4'||mydiv.tagName=='H5'||mydiv.tagName=='H6'||mydiv.tagName=='B'||mydiv.tagName=='STRONG'){
+             mydiv.style.fontWeight=200;
+         }
+         //方法二 不管是不是粗体,统一变为细体
+         // mydiv.style.fontWeight=200;
+         //方法三
+         var arr=['H1','H2','h3','h4','h5','h6','B','STRONG']
+         //检测数组里是否有粗体的标签名,返回-1意外都是粗体
+         var istrue=arr.indexOf(mydiv.tagName);
+         console.log(istrue);
+         //判断如果是粗体标签 就改变样式
+         if(istrue != -1){
+            mydiv.style.fontWeight=200;
+            mydiv.style.color='red';
+         }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       .a{
+           width: 200px;
+           height: 200px;
+       }
+       .b{
+           background-color: red;
+       }
+       .c{
+           border-radius: 50px;
+       }
+       .d{
+           background-color: blue;
+       }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="a b c">礼拜一</div>
+    <script>
+        var div=document.getElementById('mydiv');
+        console.log(div.tagName);
+        console.log(div.className);
+        div.className='a c d';
+        console.log(div.className);
+    </script>
+</body>
+</html>

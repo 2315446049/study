@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <script>
+        var c=document.getElementsByTagName('div');
+        for(i=0;i<c.length;i++){
+            c[i].style.width='50px';
+            c[i].style.height='50px';
+            c[i].style.backgroundColor='red';
+            c[i].style.display='inline-block';
+        }
+        c[2].style.backgroundColor='blue'; 
+    </script>
+</body>
+</html>

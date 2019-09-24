@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+       .a{
+           width: 200px;
+           height: 200px;
+       }
+       .b{
+           border: 2px solid red;
+       }
+       .c{
+           border-radius: 50px;
+       }
+       .d{
+           border: 2px solid blue;
+       }
+    </style>
+</head>
+<body>
+    <div id="mydiv" class="a b c"></div>
+    <button id="btn">点击按钮</button>
+    <script>
+        var div=document.getElementById('mydiv');
+        var btn=document.getElementById('btn');
+        btn.onclick=function(){
+            div.className='a c d';
+            console.log(div.className);
+        }
+    </script>
+</body>
+</html>
