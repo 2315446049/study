@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+      <div id="show"></div>
+    <script>
+        var show=document.getElementById('show');
+        var  one=Number(prompt("请输入数字1"));
+        var  two=Number(prompt("请输入数字2"));
+        var  typ=prompt("请输入计算类型");
+       typ=='+'?alert(one+two):(typ=='-'?alert(one-two):(typ=='*'?alert(one*two):(typ=='/'?alert(one/two):alert('不在范围之内'))));
+    </script>
+</body>
+</html>

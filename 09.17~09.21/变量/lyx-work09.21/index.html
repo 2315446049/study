@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="UTF-8">	
+   <title>模拟取款机</title>
+</head>
+<body>
+	<button id="one">取款按钮<tton>
+	<script type="text/javascript">
+		var one = document.getElementById('one');
+	    var ic = Number(prompt('请输入您的卡号:2315446049'));
+	    var pw = Number(prompt('请输入您的密码:123456'));
+	     if(ic=='2315446049'&&pw=='123456'){
+	        alert('您的余额为100000元');
+	     }else{
+	        alert('您输的账号或密码不正确');
+	     }
+		one.onclick = function (){
+			var pas= Number(prompt('请输入您要取的金额'));
+		  if(pas<=100000){
+             alert('您的余额为：'+(100000-pas));
+          }else{
+             alert('您的余额不足');
+          }
+		 }
+		
+	</script>
+	</body>
+<html>
