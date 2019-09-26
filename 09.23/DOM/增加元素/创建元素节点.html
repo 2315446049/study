@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h"></h1>
+    <p  id="p"></p>
+    <ul id="ul"></ul>
+    <script>
+        //用一个变量承接再文档中'创建'的一个元素
+      //  var  div = document.createElement('div');
+        //将已经创建的元素放在想放在的位置
+    // document.body.appendChild(div);
+    var h = document.getElementById('h');
+    var a = document.createElement('a');
+    h.appendChild(a);
+ 
+    var p=document.getElementById('p');
+    var span=document.createElement('span');
+    p.appendChild(span);
+
+    var ul=document.getElementById('ul')
+    // var li1=document.createElement('li');
+    // ul.appendChild(li1)
+    // var li2=document.createElement('li');
+    // ul.appendChild(li2)
+
+    for(var i=0;i<10;i++){
+        var li=document.createElement('li');
+         ul.appendChild(li)
+    }
+    </script>
+</body>
+</html>

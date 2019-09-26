@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+     img{
+         width: 80px;
+         height: 100px;
+         display: block;
+         border:1px solid black;
+
+     }
+
+</style>
+<body>
+     <img src="1.jpg" alt=""  id="img">
+     <script>
+         var img=document.getElementById('img');
+         var a=0,w=0,d=0,s=0;
+         document.onkeydown=function(e){
+            // switch(e.keyCode){
+            //     case 39:img.style.marginLeft='60px';
+            //     break;
+            //     case 38:img.style.marginBottom='20px';
+            //     break;
+            //     case 37:img.style.marginRight='60px';
+            //     break;
+            //     case 40:img.style.marginTop='20px';
+            //     break;
+
+            // }
+            switch(e.keyCode){
+                case 37:
+                    img.style.marginRight=a*50+'px';
+                    a++;
+                break;
+                case 38:
+                     img.style.marginTop=w*50+'px';
+                     w++;
+                break;
+                case 39:
+                     img.style.marginLeft=d*50+'px';
+                     d++;
+                break;
+                case 40:img.style.marginBottom=s*50+'px';
+                     s++;
+                break;
+
+            }
+         }
+     </script>
+</body>
+</html>
